@@ -1,0 +1,13 @@
+/* UNSO MEMORIA EN JAVA */ 
+En java está la memoria de las variable locales conocida como -> Stack
+
+Y la varibles tipo objetc que estarían en la memoria Heap y perdurán más
+
+PARA BORRAR la memoria los desarrolladores utilizan sus propios metodos porque
+no es común utilizar estas dos lines de acontinuación pq es pesado -null- y
+System.gc
+// anula referencia a metodo y puede borrarse de memoria automaticamente
+        aritmetica1 = null;
+        System.gc();
+// llamada recolector borrado memoria, no quiere decir q se ejecute en este momento
+
