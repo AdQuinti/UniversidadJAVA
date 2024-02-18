@@ -28,15 +28,17 @@ public class Aritmetica {
 //        return resultado; // retorna resultado
         return a + b; // se puede poner en una linea y es opcional poner parentesis (a+b)
     }
-    
+    // arg se podria poner a y b respectivamente para saber q valores recibe concretamente
     public int sumarConArgumentos(int arg1,int arg2) { // recibe argumentos o parametros
-        // asignacion argumentos recibidos a nuevos atributos o valores
-        a = arg1; 
-        b = arg2;
+        // aqui a A y B se le asgina nuevos valores q vienen de Funcion PruebaAritmetica
+        this.a = arg1; // this apunta a direccion memoria a y b
+        this.b = arg2; // el uso de this es opcional
+        // this solo se puede utlizar en la clase q estmaos trabajando
+        //this hace referencia a un atributo d nuestra clase y no variable local
         //return a + b; // regresa tipo entero
 /* se puede reciclar return de funcion sumarConRetorno pq es igual a este
    return. por eso se llama a la funcion anterior */
-        return sumarConRetorno();// toma valores ya modificado para envio
+        return this.sumarConRetorno();// toma valores ya modificado para envio
     }
     //Atributos de la clase - Declaracion Variales Globales
     int a, b;

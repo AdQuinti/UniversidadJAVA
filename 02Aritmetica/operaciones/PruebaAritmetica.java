@@ -2,6 +2,7 @@
 package operaciones;
 
 public class PruebaAritmetica {
+    // los metodos static no pueden acceder a operador "this.".
     public static void main(String[] args) {
         Aritmetica aritmetica1 = new Aritmetica();  // Instancia de la clase
         // ya podemos utilziar atributos y metodos de class Aritmetica()
